@@ -1,0 +1,3 @@
+Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.  
+
+Quick tip: the node_modules folder can get really big. It is customary to add a .gitignore file to your project so that you don’t have to sync the contents of node_modules to github. The dependencies that are stored there can be installed from your package.json by running npm install, so you don’t need to sync them.
