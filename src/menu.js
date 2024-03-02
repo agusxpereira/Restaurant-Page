@@ -1,9 +1,17 @@
 
 const cardStock = []; 
 
-const card = {name: "Sushi", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: './assets/sushi.jpg' };
-const card2 = {name: "Kami", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: './assets/sushi.jpg' };
-const card3 = {name: "Kaze", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: './assets/sushi.jpg' };
+import sushiImg from './assets/sushi.jpg';
+import chevronLeftImg from './assets/chevron-left-solid.svg';
+import chevronRigthImg from './assets/chevron-right-solid.svg';
+
+
+
+
+
+const card = {name: "Sushi", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: sushiImg };
+const card2 = {name: "Kami", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: sushiImg };
+const card3 = {name: "Kaze", price:"$12.9", ingredients:["arroz", "salmon", "agua"], src: sushiImg };
 
 const divCard = createCard(card); 
 const divCard2 = createCard(card2); 
@@ -117,8 +125,8 @@ function createMenu(){
     let chevronLeft = new Image(10, 10); 
     let chevronRigth = new Image(10, 10); 
 
-    chevronLeft.src = "./assets/chevron-left-solid.svg"
-    chevronRigth.src = "./assets/chevron-right-solid.svg"
+    chevronLeft.src = chevronLeftImg;
+    chevronRigth.src = chevronRigthImg;
 
     buttonLeft.appendChild(chevronLeft);
     buttonRigth.appendChild(chevronRigth);

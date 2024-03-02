@@ -1,3 +1,8 @@
+import srcWhatsApp from './assets/social/whatsapp.svg'
+import srcTikTok from './assets/social/whatsapp.svg'
+import srcInstagram from './assets/social/whatsapp.svg'
+import srcFacebook from './assets/social/whatsapp.svg'
+
 const content = document.querySelector('#content');
 
 function createDivMedia(data){
@@ -19,6 +24,10 @@ function createDivMedia(data){
 
 function createData(){
    
+
+
+
+
     
     const div = document.createElement("div");
     div.classList.add("content-data")
@@ -30,19 +39,19 @@ function createData(){
 
 
     let imgW = new Image(20, 20); 
-    imgW.src = './assets/social/whatsapp.svg';
+    imgW.src = srcWhatsApp;
     social.push(imgW);
 
     let imgI = new Image(20, 20); 
-    imgI.src = './assets/social/instagram.svg';
+    imgI.src = srcInstagram;
     social.push(imgI);
 
     let imgT = new Image(20, 20); 
-    imgT.src = './assets/social/tiktok.svg';
+    imgT.src = srcTikTok;
     social.push(imgT);
 
     let imgF = new Image(20, 20); 
-    imgF.src = './assets/social/facebook.svg';
+    imgF.src = srcFacebook;
     social.push(imgF);
 
     let divWsp = createDivMedia({img: imgW, text: "whatsapp: +542281123546"})

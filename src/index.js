@@ -1,6 +1,10 @@
+import _ from 'lodash';
+import './style.css';
+
 import { createHome } from "./home.js";
 import { createMenu } from "./menu.js";
 import { createAbout} from "./about.js"
+
 
 
 console.log("runing"); 
